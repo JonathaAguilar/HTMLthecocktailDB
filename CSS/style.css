@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f06d06, #000000);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,63 +11,63 @@ body {
 
 .contenedor {
     width: 100%;
-    max-width: 500px; 
-    background-color: #fff;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
-h1 {
-    margin-bottom: 5px;
+h1, label {
+    color: #000; /* Color de texto negro para título y etiquetas */
 }
 
 p {
-    margin-bottom: 20px;
-    color: #666;
+    color: #333; /* Color de texto más oscuro para párrafo */
+    margin-bottom: 1em;
 }
 
-.campo-busqueda {
-    width: 100%; 
+.campo-busqueda, .contenedor-limpiar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 #nombreCoctel, #categoriaCoctel, #instruccionesCoctel {
-    width: calc(100% - 90px); 
-    padding: 10px;
+    width: calc(100% - 100px);
+    padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'Times New Roman', serif;
+    color: #000; /* Color de texto negro para las cajas de entrada y área de texto */
 }
 
 #botonBuscar, #botonLimpiar {
-    padding: 10px 20px;
+    padding: 0.5em 1em;
     border: none;
-    color: white;
     border-radius: 4px;
     cursor: pointer;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    font-family: 'Times New Roman', serif;
 }
 
 #botonBuscar {
-    background-color: #007bff;
-    margin-left: 10px; 
+    background-color: #f06d06;
 }
 
 #botonBuscar:hover {
-    background-color: #0056b3;
+    background-color: #cc5801;
 }
 
 #botonLimpiar {
-    background-color: #dc3545;
-    width: auto; 
-    margin-top: 10px; 
+    background-color: #dc3545; /* Color rojo para el botón Limpiar */
+    color: white; /* Texto en blanco para el botón Limpiar */
 }
 
 #botonLimpiar:hover {
@@ -75,21 +75,20 @@ p {
 }
 
 label {
-    align-self: flex-start; 
-}
-
-textarea {
-    width: calc(100% - 20px); 
-    resize: vertical;
+    font-weight: bold;
 }
 
 #contenedorImagen {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1em;
     width: 100%;
+    background: #fff;
+    padding: 1em;
+    border-radius: 4px;
 }
 
 #imagenCoctel {
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
 }
