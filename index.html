@@ -1,41 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Practicas Unidad I</title>
-    <link rel="stylesheet" href="/css/styleindex.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bar 1001 - Búsqueda de Cócteles</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Mis Practicas Unidad I</h1>
-        <hr>
-        <h2>Ing. Jonathan Jesus Aguilar Romero</h2>
-        <hr>
-        <div class="practica">
-            <a href="/html/practica01.html"> PRACTICA 01 : Lista Album</a>
-        </div>
-        <div class="practica">
-            <a href="/html/practica02.html"> PRACTICA 02 : Consulta ID album</a>
-        </div>
-        <div class="practica">
-            <a href="/html/practica03.html"> PRACTICA 03 : Lista de Usuarios</a>
-        </div>
-        <div class="practica">
-            <a href="/html/practica04.html"> PRACTICA 04 : Consulta ID Usuario</a>
-        </div>
-        <div class="practica">
-            <a href="/html/practica05.html"> PRACTICA 05 : Peticiones usando el objetivo Fetch</a>
-        </div>
-        <div class="practica">
-            <a href="/html/Preexamen01.HTML"> PRE EXAMEN 01 : Vendedores</a>
-        </div>
-        <div class="practica">
-            <a href="/html/preexamen02.html"> PRE EXAMEN 02 : Buscar paises y mostrar con Promesas/Await</a>
-        </div>
+<div class="contenedor">
+    <h1>Bar 1001</h1>
+    <p>av Insurgentes 23, Ciudad de México</p>
+    
+    <label for="nombreCoctel">Nombre:</label>
+    <input type="text" id="nombreCoctel" placeholder="Ingrese el nombre del cóctel">
+    <button id="botonBuscar" onclick="buscarCoctel()">Buscar</button>
+    
+    <label for="categoriaCoctel">Categoría:</label>
+    <input type="text" id="categoriaCoctel" readonly>
+    
+    <label for="instruccionesCoctel">Instrucciones:</label>
+    <textarea id="instruccionesCoctel" readonly></textarea>
+    
+    <button id="botonLimpiar" onclick="limpiarCampos()">Limpiar</button>
+    
+    <div id="contenedorImagen">
+        <img id="imagenCoctel" src="" alt="" hidden>
     </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
