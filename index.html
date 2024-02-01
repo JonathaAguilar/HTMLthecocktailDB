@@ -4,16 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bar 1001 - Búsqueda de Cócteles</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
 <div class="contenedor">
     <h1>Bar 1001</h1>
     <p>av Insurgentes 23, Ciudad de México</p>
     
-    <label for="nombreCoctel">Nombre:</label>
-    <input type="text" id="nombreCoctel" placeholder="Ingrese el nombre del cóctel">
-    <button id="botonBuscar" onclick="buscarCoctel()">Buscar</button>
+    <div class="campo-busqueda">
+        <label for="nombreCoctel">Nombre:</label>
+        <input type="text" id="nombreCoctel" placeholder="Ingrese el nombre del cóctel">
+        <button id="botonBuscar" onclick="buscarCoctel()">Buscar</button>
+    </div>
     
     <label for="categoriaCoctel">Categoría:</label>
     <input type="text" id="categoriaCoctel" readonly>
@@ -21,12 +23,13 @@
     <label for="instruccionesCoctel">Instrucciones:</label>
     <textarea id="instruccionesCoctel" readonly></textarea>
     
-    <button id="botonLimpiar" onclick="limpiarCampos()">Limpiar</button>
-    
     <div id="contenedorImagen">
         <img id="imagenCoctel" src="" alt="" hidden>
     </div>
+    
+    <button id="botonLimpiar" onclick="limpiarCampos()">Limpiar</button>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="script.js"></script>
 </body>
