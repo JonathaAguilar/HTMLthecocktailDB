@@ -11,7 +11,7 @@ body {
 
 .contenedor {
     width: 100%;
-    max-width: 500px; /* Ajustado para hacer el contenedor más pequeño */
+    max-width: 500px; 
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -19,7 +19,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; 
 }
 
 h1 {
@@ -32,7 +32,7 @@ p {
 }
 
 .campo-busqueda {
-    width: 100%; /* Asegura que el campo de búsqueda ocupe todo el ancho del contenedor */
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ p {
 }
 
 #nombreCoctel, #categoriaCoctel, #instruccionesCoctel {
-    width: calc(100% - 90px); /* Ajusta el ancho para dejar espacio para el botón */
+    width: calc(100% - 90px); 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -52,12 +52,12 @@ p {
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    flex-shrink: 0; /* Previene que el botón se encoja */
+    flex-shrink: 0; 
 }
 
 #botonBuscar {
     background-color: #007bff;
-    margin-left: 10px; /* Espacio entre el input y el botón */
+    margin-left: 10px; 
 }
 
 #botonBuscar:hover {
@@ -66,8 +66,8 @@ p {
 
 #botonLimpiar {
     background-color: #dc3545;
-    width: auto; /* Permite que el botón se ajuste al contenido */
-    margin-top: 10px; /* Espacio entre los campos de entrada y el botón Limpiar */
+    width: auto; 
+    margin-top: 10px; 
 }
 
 #botonLimpiar:hover {
@@ -75,11 +75,11 @@ p {
 }
 
 label {
-    align-self: flex-start; /* Alinea las etiquetas a la izquierda */
+    align-self: flex-start; 
 }
 
 textarea {
-    width: calc(100% - 20px); /* Ajusta el ancho para las textareas */
+    width: calc(100% - 20px); 
     resize: vertical;
 }
 
